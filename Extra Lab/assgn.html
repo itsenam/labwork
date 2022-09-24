@@ -1,0 +1,40 @@
+<html>
+    <style>
+        #box1{text-align:center; background:lightgoldenrodyellow;}
+        #box2{text-align:center; background:lightskyblue;}
+        #box3{
+            text-align: center;
+            background-color: lightcoral;
+            width: 1500px;
+            border: 5px solid black;
+            padding: 5px;
+            margin: 30px;}
+    </style>
+<body>
+        <div id="box1"  onmouseover="resize(this, '125%')" onmouseout="resize(this, '100%')">
+            <h3>Name: Karma Tseten Namgyal Bhutia</h3>
+            <h3>Registration Number: 202000134</h3>
+        </div>
+        <div id="box2" >
+            <h3>Required image:</h3>
+            <img onmouseover="largePic(this)" onmouseout="normPic(this)" src="ye.png" width="320px" height="180px"><br> 
+            <p onmouseover="resize(this, '125%')" onmouseout="resize(this, '200%')">Eren Yeager</p>
+        </div>
+        <div id="box3">
+            <p>Official Email ID: <p style="color:blue"> karma_202000134@smit.smu.edu.in</p>
+        </div>
+<script>
+	function resize(elem, percent) { 
+	elem.style.fontSize = percent; 
+}
+	function largePic(x){
+		x.style.width="640px";
+		x.style.height = "360px";
+	}
+	function normPic(x){
+		x.style.width="320px";
+		x.style.height = "180px";
+	}
+</script>
+</body>
+</html>
